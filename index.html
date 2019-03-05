@@ -9,8 +9,56 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+        
     </head>
+    <!-- Navbar -->
+
     <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>                  
+
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1>Welcome to the CheatSheet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum repellat eligendi deleniti, vero beatae.</p>
+                <button class="btn btn-primary" href="#">Learn More</button>
+            </div>
+        </div>
+
         <div class="container">
             <h2 class="page-header">Header<small>Small Text</small></h2>
             <p class='lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius doloribus 
@@ -146,10 +194,20 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <form action="" class="inline-form">
+            <!-- Inline Form (form-inline) -->
+            <form action="" class="form-inline">
                 <div class="form-group">
                     <label>Email</label>
                     <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Insert your password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember Me!
+                    </label>
                 </div>
             </form>
         </div>
@@ -186,12 +244,134 @@
                 </tr>
                 <tr>
                     <td>China</td>
-                    <td>Grace</td>
+                    <td>Grace</td> 
                     <td>27</td>
                 </tr>
             </table>
         </div>
- 
+
+        <hr>
+
+        <!-- List Group -->
+         <div class="container">
+             <ul class="list-group">
+                 <li class="list-group-item">Item 1</li>
+                 <li class="list-group-item">Item 2</li>
+                 <li class="list-group-item">Item 3</li>
+                 <li class="list-group-item">Item 4</li>
+                 <li class="list-group-item">Item 5</li>
+             </ul>
+             <div class="list-group">
+                <a href="#" class="list-group-item active">Item 1</a>
+                <a href="#" class="list-group-item">Item 2</a>
+                <a href="#" class="list-group-item">Item 3</a>
+                <a href="#" class="list-group-item">Item 4</a>
+                <a href="#" class="list-group-item list-group-item-success">Item 5</a>
+            </div>
+         </div>
+         
+         <hr>
+
+         <div class="container">
+             <!-- Panels -->
+             <div class="panel panel-default">
+                 <div class="panel-heading">
+                     <h3 class="panel-title">Title</h3>
+                 </div>
+                 <div class="panel-body">
+                     <blockquote class="blockquote-reverse">
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab unde reiciendis rem, ut cupiditate earum.</p>
+                         <footer>Quote by <cite title="Quote Quoteson">Quote Quoteson</cite></footer>
+                    </blockquote>
+                 </div>
+                 <div class="panel-footer">
+                     by DrBalex
+                 </div>
+             </div>
+
+             <hr>
+
+             <!-- WELLS -->
+             <div class="well">Hello World</div>
+             <div class="well well-lg">Hello Big World</div>
+             <div class="well well-sm">Hello Small World</div>
+
+             <hr>
+
+             <!-- ALerts -->
+             <div class="alert alert-success" role="alert">Success</div>
+             <div class="alert alert-info" role="alert">Info</div>
+             <div class="alert alert-danger" role="alert">Danger</div>
+             <div class="alert alert-warning" role="alert">Warning</div>
+
+             <div class="alert alert-warning alert-dismissible" role="alert">
+                 <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+                 You can close this alert!
+             </div>
+             
+             <hr>
+
+             <!-- Progress Bars -->
+             <div class="progress">
+                 <div class="progress-bar progress-bar-striped active" style="width:50%">
+                        50%
+                 </div>
+             </div>
+
+             <hr>
+
+             <!-- Labels -->
+             <span class="label label-default">Default</span>
+             <h1>Hello <span class="label label-primary">Primary</span></h1>
+             <span class="label label-success">Success</span>
+             <span class="label label-info">Info</span>
+             <span class="label label-warning">Warning</span>
+             <span class="label label-danger">Danger</span>
+
+             <hr>
+
+             <!-- Badges -->
+             <a href="#">Inbox <span class="badge">50</span></a>
+             <button class="btn btn-primary" type="button">
+                 Message <span class="badges">2</span>
+             </button>
+
+             <hr>
+         </div>
+
+         <!-- Images -->
+         <div class="container">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" alt="" class="thumbnail">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" alt="" class="img-rounded">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg" alt="" class="img-circle">
+         </div>
+         <hr>
+
+         <!-- Grids -->
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8">
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nesciunt culpa ut sed reprehenderit adipisci enim quae iure natus suscipit voluptatem quis, modi eum quidem, laborum necessitatibus repellat quos dolorem a incidunt tenetur odit corporis fugit. Quia aspernatur vitae repellendus quibusdam aliquam! Repellendus aliquam iste excepturi debitis est ad harum.</p>
+                 </div>
+                 <div class="col-md-4"> 
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consequuntur vero omnis distinctio voluptate magnam.</p>
+                 </div>
+             </div>
+             <br>
+             <div class="row">
+                 <div class="col-md-4">
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit voluptatem placeat!</p>
+                 </div>
+                 <div class="col-md-4">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente aperiam beatae.</p>
+                 </div>
+                 <div class="col-md-4">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus possimus quisquam.</p>
+                 </div>
+             </div>
+         </div>
+
+
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
